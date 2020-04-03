@@ -2,7 +2,7 @@
 
 Visual Studio Code should download @types/jest with this jsconfig.json configuration :
 
-```
+```json
 {
     "typeAcquisition": {
         "include": [
@@ -14,10 +14,12 @@ Visual Studio Code should download @types/jest with this jsconfig.json configura
 
 But Automatic Type Acquisition give priority to Jest types coming from node_modules :
 
-> [23:20:24.533] Explicitly included types: ["jest"]
-> [23:20:24.534] Typing names in '/data/www/jest-vscode-ata/package.json' dependencies: ["jest"]
-> [23:20:24.578] Searching for typing names in /data/www/jest-vscode-ata/node_modules; all files: [...]
-> [23:20:24.632]     Package 'jest' provides its own types.
+```
+[23:20:24.533] Explicitly included types: ["jest"]
+[23:20:24.534] Typing names in '/data/www/jest-vscode-ata/package.json' dependencies: ["jest"]
+[23:20:24.578] Searching for typing names in /data/www/jest-vscode-ata/node_modules; all files: [...]
+[23:20:24.632]     Package 'jest' provides its own types.
+```
 
 Provided Jest types seems to be useless and they are not globally available. Automatic Type Acquisition should give the ability to prioritize jsconfig.json configuration over node_modules types.
 
