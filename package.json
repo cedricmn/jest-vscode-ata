@@ -1,0 +1,22 @@
+{
+  "name": "jest-vscode-ata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedricmn/jest-vscode-ata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedricmn/jest-vscode-ata/issues"
+  },
+  "homepage": "https://github.com/cedricmn/jest-vscode-ata#readme",
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
+}
