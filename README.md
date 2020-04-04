@@ -30,7 +30,8 @@ Provided Jest types seems to be useless and they are not globally available. Aut
 
 # Demo repository
 
-- git clone https://github.com/cedricmn/jest-vscode-ata.git
+- Clone Git repository with following command *git clone https://github.com/cedricmn/jest-vscode-ata.git*
+- Go to project folder and type *npm install*
 - Open index.test.js with Visual Studio Code
 - Jest autocomplete does not works
 
